@@ -949,7 +949,8 @@ a:hover {
 
 .tab-container {
   position: relative;
-  overflow: hidden; }
+  overflow: hidden; 
+  padding-bottom: 5rem;}
   @media (max-width: 53.75rem) {
     .tab-container_project-page {
       display: none; } }
@@ -1103,7 +1104,7 @@ a:hover {
   display: flex;
   background: url("../img/decor/more-card-bg.jpg") no-repeat;
   background-size: cover;
-  padding: 6.25rem;
+  padding: 3.25rem;
   border-radius: 0.3125rem;
   overflow: hidden; }
   @media (max-width: 64rem) {
@@ -1134,8 +1135,8 @@ a:hover {
       width: 80%; } }
 
 .lear-more__title {
-  font-size: 3.125rem;
-  line-height: 3.75rem;
+  font-size: 2.125rem;
+  line-height: 2.75rem;
   font-family: "GothamProBlack", sans-serif;
   margin-bottom: 5rem;
   text-transform: uppercase; }
@@ -1258,8 +1259,6 @@ a:hover {
           align-items: center;
   margin-bottom: 3.125rem;
   min-width: 13.75rem; }
-  .services-list__item:last-child {
-    margin-bottom: 0; }
   @media (max-width: 53.75rem) {
     .services-list__item {
       margin: 0.625rem !important; } }
@@ -1307,7 +1306,7 @@ a:hover {
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
+          justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
   .technologies__list_project-page {
