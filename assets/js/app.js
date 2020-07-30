@@ -8,7 +8,6 @@ $(function(){
         $(this).addClass('active');
         $('#'+tabId).addClass('active');
     });
-
 });
 /*
  _ _      _       _
@@ -3019,10 +3018,12 @@ var navScrolling = (function () {
             var navItem  = $('.nav__link'),
                 navTarget = $('section');
             $('a[href*="#"]').on("click", function(e){
-                e.preventDefault();
-                var elementClick =  $(this).attr("href"),
-                    destination =   $(elementClick).offset().top;
-                $('html, body').animate({scrollTop: destination}, 1000);
+                if (window.location.href.includes('index.html') || e.target.innerText !== 'Our Team') {
+                    e.preventDefault();
+                    var elementClick =  $(this).attr("href"),
+                        destination =   $(elementClick).offset().top;
+                    $('html, body').animate({scrollTop: destination}, 1000);
+                }
             });
         }
     }

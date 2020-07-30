@@ -5,10 +5,11 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>WBS solutions</title>
+    <title>I.A.D.P Solutions</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="shortcut icon" href="assets/img/favicon.png">
+    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+<!--    <link rel="shortcut icon" href="assets/img/favicon.png">-->
     <link rel="stylesheet" href="assets/css/foundation.css">
     <link rel="stylesheet" href="assets/css/main.css"><!--[if lt IE 9]>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
@@ -19,12 +20,17 @@
         <div class="menu-overlay"></div>
         <header class="header">
           <div class="container">
-            <div class="header__content"><a class="logo" href="index.html"><img class="logo__img" src="assets/img/decor/logo.png"></a>
+            <div class="header__content">
+              <a class="logo" href="index.html">
+                <span class="logo-title">I.A.D.P</span>
+                <span class="logo-text">solutions</span>
+              </a>
               <div class="header__right-block">
                 <nav class="nav">
                   <ul class="nav__list">
                     <li class="nav__item"><a class="nav__link" href="index.html">Home</a></li>
                     <li class="nav__item"><a class="nav__link" href="services.html">Services</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#teamSection">Our Team</a></li>
                     <li class="nav__item"><a class="nav__link" href="contacts.html">Contact Us</a></li>
                   </ul>
                 </nav>
@@ -36,6 +42,10 @@
           </div>
         </header>
         <section class="top-section">
+          <video class="bg-video" autoplay muted loop id="myVideo">
+            <source src="assets/img/decor/bg-video.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+          </video>
           <div class="container">
             <div class="top-section__overlay"></div>
             <div class="top-section__content">
@@ -49,28 +59,40 @@
             <div class="services-section__content">
               <div class="services-section__left-col">
                 <div class="info-card centered">
-                  <h4 class="light info-card-title centered"><span>//</span>&nbsp;What we do</h4>
+                  <h4 class="light info-card-title centered">What we do</h4>
                   <h4 class="info-card__text-title light left">WE BUILD DIGITAL PRODUCTS</h4>
-                  <p class="info-card__text text light left">WBS Solutions is a boutique outsourcing company offering a full range of custom software development services for a wide variety of verticals and business domains.</p><a class="button" href="services.html">Read more</a>
+                  <p class="info-card__text text light left">WBS Solutions is a boutique outsourcing company offering a full range of custom software development services for a wide variety of verticals and business domains.</p>
+                  <div class="button-container btn-centered">
+                    <span class="mas">Read more</span>
+                    <a class="button" href="services.html">Read more</a>
+                  </div>
                 </div>
               </div>
               <div class="services-section__right-col">
-                <h3 class="section-title dark"><span>//</span>&nbsp;Services</h3>
+                <h3 class="section-title"><span class="title-decor">Services</span></h3>
                 <ul class="services-list">
                   <li class="services-list__item">
-                    <div class="services-item__icon"><img src="assets/img/userfiles/services-icon1.png"></div>
+                    <div class="services-item__icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
                     <div class="services-item__text">Web development</div>
                   </li>
                   <li class="services-list__item">
-                    <div class="services-item__icon"><img src="assets/img/userfiles/services-icon3.png"></div>
+                    <div class="services-item__icon">
+                        <i class="far fa-object-ungroup"></i>
+                    </div>
                     <div class="services-item__text">UX/UI design</div>
                   </li>
                   <li class="services-list__item">
-                    <div class="services-item__icon"><img src="assets/img/userfiles/services-icon4.png"></div>
+                    <div class="services-item__icon">
+                        <i class="fas fa-tasks"></i>
+                    </div>
                     <div class="services-item__text">QA and testing</div>
                   </li>
                   <li class="services-list__item">
-                    <div class="services-item__icon"><img src="assets/img/userfiles/services-icon4.png"></div>
+                    <div class="services-item__icon">
+                        <i class="fas fa-user-cog"></i>
+                    </div>
                     <div class="services-item__text">Delivery consulting</div>
                   </li>
                 </ul>
@@ -80,38 +102,54 @@
         </section>
         <section class="technologies-section">
           <div class="container">
-            <h3 class="technologies-section__title centered"><span>// SKILLS</span><br>Technologies</h3>
+            <h3 class="section-title centered"><span class="title-decor">Technologies</span></h3>
             <ul class="technologies__list">
               <li class="technologies__item">
-                <div class="technologies__icon"><img src="assets/img/decor/technology1.png"></div>
+                <div class="technologies__icon">
+                    <i class="fab fa-js-square"></i>
+                </div>
                 <div class="technologies__name">Java Script</div>
               </li>
               <li class="technologies__item">
-                <div class="technologies__icon"><img src="assets/img/decor/technology3.png"></div>
+                <div class="technologies__icon">
+                    <i class="fab fa-php"></i>
+                </div>
                 <div class="technologies__name">Php</div>
               </li>
               <li class="technologies__item">
-                <div class="technologies__icon"><img src="assets/img/decor/technology4.png"></div>
+                <div class="technologies__icon">
+                    <i class="fab fa-html5"></i>
+                </div>
                 <div class="technologies__name">Html5</div>
               </li>
               <li class="technologies__item">
-                <div class="technologies__icon"><img src="assets/img/decor/technology4.png"></div>
-                <div class="technologies__name">CSS</div>
+                <div class="technologies__icon">
+                    <i class="fab fa-css3-alt"></i>
+                </div>
+                <div class="technologies__name">CSS3</div>
               </li>
               <li class="technologies__item">
-                <div class="technologies__icon"><img src="assets/img/decor/technology4.png"></div>
+                <div class="technologies__icon">
+                    <i class="fab fa-wordpress"></i>
+                </div>
                 <div class="technologies__name">WordPress</div>
               </li>
               <li class="technologies__item">
-                <div class="technologies__icon"><img src="assets/img/decor/technology4.png"></div>
-                <div class="technologies__name">MongoDB</div>
+                <div class="technologies__icon">
+                    <i class="fab fa-node-js"></i>
+                </div>
+                <div class="technologies__name">NodeJS</div>
               </li>
               <li class="technologies__item">
-                <div class="technologies__icon"><img src="assets/img/decor/technology4.png"></div>
+                <div class="technologies__icon">
+                    <i class="fab fa-angular"></i>
+                </div>
                 <div class="technologies__name">Angular</div>
               </li>
               <li class="technologies__item">
-                <div class="technologies__icon"><img src="assets/img/decor/technology4.png"></div>
+                <div class="technologies__icon">
+                    <i class="fab fa-react"></i>
+                </div>
                 <div class="technologies__name">React</div>
               </li>
             </ul>
@@ -119,33 +157,121 @@
         </section>
         <section class="project-section">
           <div class="container">
-            <h3 class="section-title dark centered"><span>//</span>&nbsp;Our Projects</h3>
+            <h3 class="section-title dark centered"><span class="title-decor">Our Projects</span></h3>
             <div class="tab-container tab-container_main-page" id="tab-container">
               <div class="projects-block__container active" id="tab-1">
-                <div class="projects-preview__item projects-preview__item_small"><a class="projects-preview__link"></a>
+                <div class="projects-preview__item projects-preview__item_small">
+                  <a class="projects-preview__link" href="https://adrenalin-brest.by/" target="_blank"></a>
                   <div class="projects-preview-item__disc">
                     <h5 class="projects-preview-item__name">«Adrenalin»</h5>
                     <p class="projects-preview-item__text">Website for gym</p>
-                  </div><img class="projects-preview-item__img" src="assets/img/userfiles/adrenalin.png">
+                  </div>
+                  <img class="projects-preview-item__img" src="assets/img/userfiles/adrenalin.png">
                 </div>
-                <div class="projects-preview__item projects-preview__item_small"><a class="projects-preview__link" href="project-page.html"></a>
+                <div class="projects-preview__item projects-preview__item_small">
+                  <a class="projects-preview__link" href="https://euroizum.by/" target="_blank"></a>
                   <div class="projects-preview-item__disc">
                     <h5 class="projects-preview-item__name">«Izum»</h5>
                     <p class="projects-preview-item__text">Website for stretch ceiling company</p>
                   </div><img class="projects-preview-item__img" src="assets/img/userfiles/izum.png">
                 </div>
-                <div class="projects-preview__item projects-preview__item_small"><a class="projects-preview__link" href="project-page.html"></a>
+                <div class="projects-preview__item projects-preview__item_small">
+                  <a class="projects-preview__link" href="http://citytaxi.by/" target="_blank"></a>
                   <div class="projects-preview-item__disc">
                     <h5 class="projects-preview-item__name">«Taxi City»</h5>
                     <p class="projects-preview-item__text">Website for taxi company</p>
                   </div><img class="projects-preview-item__img" src="assets/img/userfiles/taxicity.png">
                 </div>
-                <div class="projects-preview__item projects-preview__item_small"><a class="projects-preview__link" href="project-page.html"></a>
+                <div class="projects-preview__item projects-preview__item_small">
+                  <a class="projects-preview__link" href="http://perimeter.by/" target="_blank"></a>
                   <div class="projects-preview-item__disc">
                     <h5 class="projects-preview-item__name">«Perimeter»</h5>
                     <p class="projects-preview-item__text">Website for construction company</p>
                   </div><img class="projects-preview-item__img" src="assets/img/userfiles/perimeter.png">
                 </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="team-section" id="teamSection">
+          <div class="container">
+            <h3 class="section-title dark centered"><span class="title-decor">Our Team</span></h3>
+            <div class="team-container">
+              <div class="team-item">
+                <img src="assets/img/userfiles/team-member.png" alt="" class="team-item-img">
+                <div class="team-item-text">
+                  <div class="team-item-name">Ilya Popov</div>
+                  <div class="team-item-description">Project Engineer</div>
+                </div>
+                <ul class="team-item-socials-list">
+                  <li class="team-item-socials-item">
+                    <a href="">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                  </li>
+                  <li class="team-item-socials-item">
+                    <a href="">
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="team-item">
+                <img src="assets/img/userfiles/team-member.png" alt="" class="team-item-img">
+                <div class="team-item-text">
+                  <div class="team-item-name">Alexander Rogachevsky</div>
+                  <div class="team-item-description">Marketing Manager</div>
+                </div>
+                <ul class="team-item-socials-list">
+                  <li class="team-item-socials-item">
+                    <a href="">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                  </li>
+                  <li class="team-item-socials-item">
+                    <a href="">
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="team-item">
+                <img src="assets/img/userfiles/team-member.png" alt="" class="team-item-img">
+                <div class="team-item-text">
+                  <div class="team-item-name">Dzmitry Kiman</div>
+                  <div class="team-item-description">Project Engineer</div>
+                </div>
+                <ul class="team-item-socials-list">
+                  <li class="team-item-socials-item">
+                    <a href="">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                  </li>
+                  <li class="team-item-socials-item">
+                    <a href="">
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="team-item">
+                <img src="assets/img/userfiles/team-member.png" alt="" class="team-item-img">
+                <div class="team-item-text">
+                  <div class="team-item-name">Pavel Litovka</div>
+                  <div class="team-item-description">Business Analyst</div>
+                </div>
+                <ul class="team-item-socials-list">
+                  <li class="team-item-socials-item">
+                    <a href="">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                  </li>
+                  <li class="team-item-socials-item">
+                    <a href="">
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
@@ -164,15 +290,20 @@
                     <input class="input" name="Name" placeholder="Name" type="text">
                     <input class="input" name="Email" placeholder="Email" type="email">
                     <input class="input" name="Phone" placeholder="Phone" type="text">
-                    <input class="input" name="Write-us" placeholder="Write us" type="text">
+                    <textarea class="input" name="Write-us" placeholder="Comment" type="text"></textarea>
                   </div>
-                  <div class="check-box-group">
-                    <label for="symbols">
-                      <input class="custom-check-box" id="symbols" type="checkbox" name="symbols" value="symbols">
-                      <label for="symbols"></label><span class="label__text">I hereby confirm that I have read and agree with the policy of processing personal data.</span>
-                    </label>
+<!--                  <div class="check-box-group">-->
+<!--                    <label for="symbols">-->
+<!--                      <input class="custom-check-box" id="symbols" type="checkbox" name="symbols" value="symbols">-->
+<!--                      <label for="symbols"></label><span class="label__text">I hereby confirm that I have read and agree with the policy of processing personal data.</span>-->
+<!--                    </label>-->
+<!--                  </div>-->
+                  <div class="submit-btn-container">
+                    <div class="button-container">
+                      <span class="mas">Send message</span>
+                      <button class="button" type="submit">Send message</button>
+                    </div>
                   </div>
-                  <button class="submit-btn" type="submit">Send message</button>
                 </form>
               </div>
             </div>
@@ -182,7 +313,11 @@
       <footer class="footer">
         <div class="container">
           <div class="footer__content">
-            <div class="footer__left-block"><a class="logo" href="index.html"><img class="logo logo_footer" src="assets/img/decor/logo.png"></a>
+            <div class="footer__left-block">
+              <a class="logo" href="index.html">
+                <span class="logo-title">I.A.D.P</span>
+                <span class="logo-text">solutions</span>
+              </a>
               <nav class="nav nav_footer">
                 <ul class="nav__list">
                   <li class="nav__item"><a class="nav__link footer_nav" href="index.html">Home</a></li>
@@ -191,7 +326,7 @@
                 </ul>
               </nav>
             </div>
-            <div class="copyright">2017</div>
+            <div class="copyright">2020</div>
           </div>
         </div>
       </footer>
